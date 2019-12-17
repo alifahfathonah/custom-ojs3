@@ -85,4 +85,16 @@
 	{/if}
 
 	{call_hook name="Templates::Issue::Issue::Article"}
+
+	
+	{**
+	* Fungsi statistik view untuk menampilkan di frontend
+	*}
+	
+	<img src="/public/View.png"> {translate key="article.abstract"} views : {$article->getViews()} | <img src="/public/pdf-16.ico"> {if is_a($article, 'PublishedArticle')}{assign var=galleys value=$article->getGalleys()}{/if}
+{if $galleys}
+{foreach from=$galleys item=galley name=galleyList}
+{$galley->getGalleyLabel()} downloads : {$galley->getViews()}  
+{/foreach}
+{/if}
 </div>
