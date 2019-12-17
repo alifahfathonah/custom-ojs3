@@ -459,7 +459,7 @@ captcha_on_register = on
 perl = /usr/bin/perl
 
 ; tar (used in backup plugin, translation packaging)
-tar = C:\Windows\System32\tar.exe
+tar = /usr/bin/tar
 
 ; On systems that do not have libxsl/xslt libraries installed, or for those who
 ; require a specific XSLT processor, you may enter the complete path to the
