@@ -405,7 +405,7 @@ result_cache_hours = 1
 oai = On
 
 ; OAI Repository identifier
-repository_id = "ojs2.host-2"
+repository_id = "http://ejournal.stmik-sumedang.ac.id/"
 
 ; Maximum number of records per request to serve via OAI
 oai_max_records = 100
